@@ -68,12 +68,17 @@
 <body>
 <div class="wrap">
   <h1>CLARITY Act passage tracker</h1>
-  <p class="subtitle">Daily-scored odds of Senate passage before the August recess. Weighted model: floor time (25%), merged text (15%), ethics resolution (25%), Democratic vote count (25%), calendar runway (10%).</p>
+  <p class="subtitle">Daily-scored odds of Senate passage before the August recess. Weighted model: floor time (25%), merged text (15%), ethics resolution (25%), Democratic vote count (25%), calendar runway (10%). Live Polymarket price shown for reference — that market resolves on full-year 2026 passage, a looser bar than this tracker's pre-recess scope, so expect it to run higher.</p>
 
   <div class="cards">
     <div class="card"><p>Latest score</p><p id="latestScore">--</p></div>
     <div class="card"><p>Days logged</p><p id="daysLogged">--</p></div>
     <div class="card"><p>Last updated</p><p id="lastUpdated" style="font-size:16px;">--</p></div>
+    <div class="card" id="polyCard">
+      <p>Polymarket (Yes, 2026)</p>
+      <p id="polyScore">loading…</p>
+      <p id="polyMeta" class="note" style="margin-top:2px;"></p>
+    </div>
   </div>
 
   <div class="chart-wrap">
@@ -143,6 +148,29 @@ fetch('history.json')
   .catch(err => {
     document.querySelector('.chart-inner').innerHTML = '<p style="color:var(--text-muted)">Could not load history.json</p>';
     console.error(err);
+  });
+
+// Live Polymarket odds — "Clarity Act signed into law in 2026?"
+fetch('https://gamma-api.polymarket.com/events/slug/clarity-act-signed-into-law-in-2026')
+  .then(r => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  })
+  .then(event => {
+    const market = event.markets && event.markets[0];
+    if (!market) throw new Error('No market in event response');
+    const outcomes = JSON.parse(market.outcomes);
+    const prices = JSON.parse(market.outcomePrices);
+    const yesIdx = outcomes.findIndex(o => o.toLowerCase() === 'yes');
+    const yesPrice = parseFloat(prices[yesIdx >= 0 ? yesIdx : 0]);
+    document.getElementById('polyScore').textContent = Math.round(yesPrice * 100) + '%';
+    const vol = market.volume ? Math.round(parseFloat(market.volume)).toLocaleString() : null;
+    document.getElementById('polyMeta').textContent = vol ? ('$' + vol + ' vol · full-year, not pre-recess') : 'full-year, not pre-recess';
+  })
+  .catch(err => {
+    document.getElementById('polyScore').textContent = '—';
+    document.getElementById('polyMeta').textContent = 'Live odds unavailable right now';
+    console.error('Polymarket fetch failed:', err);
   });
 </script>
 </body>
