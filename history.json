@@ -8,5 +8,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.5,
     "note": "Senate returns from recess; merged Banking/Ag text expected this week; ethics deadlock on Trump crypto disclosure; only Gallego/Alsobrooks firm of 7 needed Dem votes; NDAA competing for floor time"
+  },
+  {
+    "date": "2026-07-14",
+    "score": 0.39,
+    "floor_time": 0.4,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.2,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.45,
+    "note": "Merged Banking/Agriculture draft released this week (+70 pages), but ethics provision omitted entirely; floor vote firming toward specific week-of-July-20 target; Wyden letter narrows Dem objection list slightly but no new firm votes beyond Gallego/Alsobrooks; new risk: shrinking GOP conference (Graham's death, McConnell absence) raises effective Dem-vote bar"
   }
 ]
