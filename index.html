@@ -77,7 +77,6 @@
     <div class="card" id="polyCard">
       <p>Polymarket (Yes, 2026)</p>
       <p id="polyScore">loading…</p>
-      <p id="polyMeta" class="note" style="margin-top:2px;"></p>
     </div>
   </div>
 
@@ -164,12 +163,9 @@ fetch('https://gamma-api.polymarket.com/events/slug/clarity-act-signed-into-law-
     const yesIdx = outcomes.findIndex(o => o.toLowerCase() === 'yes');
     const yesPrice = parseFloat(prices[yesIdx >= 0 ? yesIdx : 0]);
     document.getElementById('polyScore').textContent = Math.round(yesPrice * 100) + '%';
-    const vol = market.volume ? Math.round(parseFloat(market.volume)).toLocaleString() : null;
-    document.getElementById('polyMeta').textContent = vol ? ('$' + vol + ' vol · full-year, not pre-recess') : 'full-year, not pre-recess';
   })
   .catch(err => {
     document.getElementById('polyScore').textContent = '—';
-    document.getElementById('polyMeta').textContent = 'Live odds unavailable right now';
     console.error('Polymarket fetch failed:', err);
   });
 </script>
