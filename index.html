@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLARITY Act Passage Tracker</title>
+<style>
+  :root {
+    --surface-0: #f7f6f2;
+    --surface-1: #f1efe8;
+    --surface-2: #ffffff;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --border: rgba(11,11,11,0.10);
+    --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface-0: #16161a;
+      --surface-1: #1e1e22;
+      --surface-2: #26262b;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #898781;
+      --border: rgba(255,255,255,0.10);
+      --accent: #3987e5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: var(--surface-0);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 500; margin: 0 0 4px; }
+  .subtitle { color: var(--text-secondary); font-size: 14px; margin: 0 0 2rem; }
+  .cards { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .card {
+    background: var(--surface-1);
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+    min-width: 140px;
+  }
+  .card p:first-child { font-size: 13px; color: var(--text-secondary); margin: 0 0 4px; }
+  .card p:last-child { font-size: 24px; font-weight: 500; margin: 0; }
+  .chart-wrap {
+    background: var(--surface-2);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .chart-inner { position: relative; width: 100%; height: 280px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 0.5px solid var(--border); }
+  th { color: var(--text-secondary); font-weight: 500; }
+  .note { color: var(--text-secondary); font-size: 12px; }
+  footer { color: var(--text-muted); font-size: 12px; margin-top: 2rem; text-align: center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>CLARITY Act passage tracker</h1>
+  <p class="subtitle">Daily-scored odds of Senate passage before the August recess. Weighted model: floor time (25%), merged text (15%), ethics resolution (25%), Democratic vote count (25%), calendar runway (10%).</p>
+
+  <div class="cards">
+    <div class="card"><p>Latest score</p><p id="latestScore">--</p></div>
+    <div class="card"><p>Days logged</p><p id="daysLogged">--</p></div>
+    <div class="card"><p>Last updated</p><p id="lastUpdated" style="font-size:16px;">--</p></div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-inner">
+      <canvas id="clarityChart" role="img" aria-label="Line chart of CLARITY Act pre-recess passage probability score over time.">Loading chart data.</canvas>
+    </div>
+  </div>
+
+  <table id="historyTable">
+    <thead>
+      <tr><th>Date</th><th>Score</th><th>Note</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <footer>Data: <a href="history.json">history.json</a> &middot; Source: <a href="https://github.com/scandihoovian/clarity-act-tracker">scandihoovian/clarity-act-tracker</a></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+fetch('history.json')
+  .then(r => r.json())
+  .then(history => {
+    history.sort((a, b) => a.date.localeCompare(b.date));
+
+    const latest = history[history.length - 1];
+    document.getElementById('latestScore').textContent = Math.round(latest.score * 100) + '%';
+    document.getElementById('daysLogged').textContent = history.length;
+    document.getElementById('lastUpdated').textContent = latest.date;
+
+    const tbody = document.querySelector('#historyTable tbody');
+    history.slice().reverse().forEach(h => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${h.date}</td><td>${Math.round(h.score * 100)}%</td><td class="note">${h.note || ''}</td>`;
+      tbody.appendChild(tr);
+    });
+
+    new Chart(document.getElementById('clarityChart'), {
+      type: 'line',
+      data: {
+        labels: history.map(h => h.date.slice(5)),
+        datasets: [{
+          label: 'Pre-recess passage score',
+          data: history.map(h => Math.round(h.score * 100)),
+          borderColor: '#2a78d6',
+          backgroundColor: 'rgba(42,120,214,0.1)',
+          borderWidth: 2,
+          pointRadius: 5,
+          pointBackgroundColor: '#2a78d6',
+          pointBorderColor: '#fcfcfb',
+          pointBorderWidth: 2,
+          fill: true,
+          tension: 0.2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { min: 0, max: 100, ticks: { callback: v => v + '%', color: '#898781' }, grid: { color: '#e1e0d9' } },
+          x: { ticks: { color: '#898781' }, grid: { display: false } }
+        }
+      }
+    });
+  })
+  .catch(err => {
+    document.querySelector('.chart-inner').innerHTML = '<p style="color:var(--text-muted)">Could not load history.json</p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>
