@@ -18,5 +18,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.45,
     "note": "Merged Banking/Agriculture draft released this week (+70 pages), but ethics provision omitted entirely; floor vote firming toward specific week-of-July-20 target; Wyden letter narrows Dem objection list slightly but no new firm votes beyond Gallego/Alsobrooks; new risk: shrinking GOP conference (Graham's death, McConnell absence) raises effective Dem-vote bar"
+  },
+  {
+    "date": "2026-07-15",
+    "score": 0.36,
+    "floor_time": 0.32,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.2,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.4,
+    "note": "Polymarket odds plummet to ~24-39% range (from peak >80% in Feb) despite Trump tying bill to China-competition warning; no new floor-time scheduling announced despite bill being one day closer to Aug 7 recess cutoff; Graham's death removes a GOP voice from the push; ethics, dem-vote count, and merged-text status unchanged from yesterday; market pricing now more bearish than the procedural sub-scores alone would suggest"
   }
 ]
