@@ -28,5 +28,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.4,
     "note": "Polymarket odds plummet to ~24-39% range (from peak >80% in Feb) despite Trump tying bill to China-competition warning; no new floor-time scheduling announced despite bill being one day closer to Aug 7 recess cutoff; Graham's death removes a GOP voice from the push; ethics, dem-vote count, and merged-text status unchanged from yesterday; market pricing now more bearish than the procedural sub-scores alone would suggest"
+  },
+  {
+    "date": "2026-07-16",
+    "score": 0.35,
+    "floor_time": 0.3,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.2,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.38,
+    "note": "Trump met with senators at White House Thursday afternoon to try to resolve the conflict-of-interest/ethics provision; no readout on outcome yet, unclear if Dems were part of the meeting; Thune reiterates hope for floor vote before Aug 7 recess but no firm date locked; merged text and Dem vote count (Gallego/Alsobrooks) unchanged; calendar runway ticks down another day; Polymarket odds still in the 24-39% range, down sharply from spring highs"
   }
 ]
