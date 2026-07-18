@@ -38,5 +38,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.38,
     "note": "Trump met with senators at White House Thursday afternoon to try to resolve the conflict-of-interest/ethics provision; no readout on outcome yet, unclear if Dems were part of the meeting; Thune reiterates hope for floor vote before Aug 7 recess but no firm date locked; merged text and Dem vote count (Gallego/Alsobrooks) unchanged; calendar runway ticks down another day; Polymarket odds still in the 24-39% range, down sharply from spring highs"
+  },
+  {
+    "date": "2026-07-17",
+    "score": 0.34,
+    "floor_time": 0.28,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.15,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.36,
+    "note": "Thursday's Trump-senator meeting produced no public deal; merged Banking/Ag draft confirmed to omit ethics language entirely, prompting Sens. Murphy, Van Hollen, and Merkley to formally oppose it, on top of the existing Gallego/Alsobrooks-only firm Dem count of 2/7; House Financial Services field hearing at Federal Hall today marks one year since House passage, but no Senate floor date announced; GENIUS Act stablecoin rulemaking deadline hits tomorrow (Jul 18), adding to a crowded agenda; Polymarket hit a record low of 32% today (from a Feb peak >80%), with other venues (Kalshi, Galaxy) showing similar or steeper declines"
   }
 ]
