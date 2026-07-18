@@ -48,5 +48,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.36,
     "note": "Thursday's Trump-senator meeting produced no public deal; merged Banking/Ag draft confirmed to omit ethics language entirely, prompting Sens. Murphy, Van Hollen, and Merkley to formally oppose it, on top of the existing Gallego/Alsobrooks-only firm Dem count of 2/7; House Financial Services field hearing at Federal Hall today marks one year since House passage, but no Senate floor date announced; GENIUS Act stablecoin rulemaking deadline hits tomorrow (Jul 18), adding to a crowded agenda; Polymarket hit a record low of 32% today (from a Feb peak >80%), with other venues (Kalshi, Galaxy) showing similar or steeper declines"
+  },
+  {
+    "date": "2026-07-18",
+    "score": 0.34,
+    "floor_time": 0.3,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.15,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.34,
+    "note": "Federal Hall hearing wrapped Friday with Subcommittee Chair Steil closing by urging the Senate to 'get it across the finish line'; no markup, no vote, no change in legislative status; Thune's pledge for a floor vote before Aug 7 recess still points to the week of July 20 but remains unscheduled; ethics deadlock unresolved, Murphy/Van Hollen/Merkley opposition still stands, Gallego/Alsobrooks remain the only firm Dem votes (2 of ~7 needed); GENIUS Act stablecoin rulemaking deadline lands today, adding to Senate's crowded plate; Polymarket 2026-passage odds sit at a fresh record low, roughly 30-35% depending on venue/snapshot, down from a February peak above 80%"
   }
 ]
