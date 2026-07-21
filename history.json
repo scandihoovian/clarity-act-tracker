@@ -68,5 +68,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.33,
     "note": "Sen. Lummis went public (Fox Business) confirming the floor vote is now targeted for this week, week of July 20, after '10 months of work' -- the most concrete floor-time signal yet, though still a target from the Digital Assets Subcommittee chair rather than a locked Thune-confirmed date or filed cloture motion; merged text and Dem vote count unchanged (Gallego/Alsobrooks only, 2 of 7); ethics language still absent from the merged draft with no sign over the weekend of a Gillibrand/Warren-satisfying fix; Polymarket rebounded off Friday's 32% record low to 46% as of today, tracking the renewed floor-vote optimism; ~12-13 working days remain before the Aug 7 recess"
+  },
+  {
+    "date": "2026-07-21",
+    "score": 0.45,
+    "floor_time": 0.5,
+    "merged_text": 0.8,
+    "ethics_resolved": 0.4,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.31,
+    "note": "Biggest development in weeks: Trump personally approved ethics-provision language Monday evening (Eleanor Terrett/Punchbowl News, corroborated by Wu Blockchain) after last Thursday's meeting with Sens. Moreno and Lummis produced no deal; Sen. Moreno called it 'the most aggressive ethics language' ever proposed on the topic, and text was sent to a group of Senate Republicans; but Democrats -- including Gallego and Alsobrooks, the two votes already in hand, plus Warren and Gillibrand who set the terms -- have not seen the text, and the White House hasn't released it publicly or confirmed details; dem_votes_frac held at 2/7 since no Dem has evaluated let alone endorsed the package; revised bill text expected within days per industry sources; Polymarket 2026-passage odds holding around 46%, up sharply from Friday's 32% record low; still ~12 working days to the Aug 7 recess"
   }
 ]
