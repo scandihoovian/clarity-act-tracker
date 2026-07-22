@@ -78,5 +78,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.31,
     "note": "Biggest development in weeks: Trump personally approved ethics-provision language Monday evening (Eleanor Terrett/Punchbowl News, corroborated by Wu Blockchain) after last Thursday's meeting with Sens. Moreno and Lummis produced no deal; Sen. Moreno called it 'the most aggressive ethics language' ever proposed on the topic, and text was sent to a group of Senate Republicans; but Democrats -- including Gallego and Alsobrooks, the two votes already in hand, plus Warren and Gillibrand who set the terms -- have not seen the text, and the White House hasn't released it publicly or confirmed details; dem_votes_frac held at 2/7 since no Dem has evaluated let alone endorsed the package; revised bill text expected within days per industry sources; Polymarket 2026-passage odds holding around 46%, up sharply from Friday's 32% record low; still ~12 working days to the Aug 7 recess"
+  },
+  {
+    "date": "2026-07-22",
+    "score": 0.46,
+    "floor_time": 0.55,
+    "merged_text": 0.9,
+    "ethics_resolved": 0.35,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.29,
+    "note": "Full working draft (hundreds of pages) circulated Wednesday, posted publicly by Punchbowl News; ethics section finally has real language -- conflict-of-interest ban on the president and senior officials -- but it sunsets in 2029 and leaves enforcement to a Trump-controlled DOJ, exactly the design Democrats have flagged as inadequate; Sen. Alsobrooks called it 'an unserious offer' and said she wouldn't back the bill as written, though she says talks continue; dem_votes_frac held at 2/7 since neither Alsobrooks nor Gallego has endorsed this text; Thune's office confirmed to CoinDesk it intends floor action 'in coming days' before recess, a firmer signal than prior 'before recess' framing; DeFi-friendly Blockchain Regulatory Certainty Act section survives intact; 16 calendar days (about 11-12 working days) remain before the Senate's Aug 7 recess"
   }
 ]
