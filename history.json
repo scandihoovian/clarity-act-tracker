@@ -98,5 +98,25 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.2,
     "note": "Setback: Thune told reporters Thursday the pre-recess deadline 'probably' won't be hit for final passage, saying only he'd 'like to at least get Clarity started' before Aug 7 -- a walk-back from Wednesday's firmer 'coming days' floor-action signal; next week's floor priority is the bipartisan Russia sanctions/tariffs bill plus Sen. Graham's funeral, squeezing the runway further; White House adviser Patrick Witt pushed back on-record calling Thune 'perplexed' and still eyeing the first week of August, but even Witt concedes no final vote in July; seven Senate Democrats (Booker, Murphy, Van Hollen, Merkley, Warren, Gillibrand, Wyden) issued a joint statement Wednesday that the new ethics text 'falls short,' hardening opposition beyond the 2 crossover votes in hand (Gallego/Alsobrooks unchanged, still uncommitted on this text); banking trade groups and credit unions also flagged fresh objections to stablecoin-yield and preemption language; Polymarket signal conflicting -- live market read 46% but same-day reporting cites a slide from 48% to 38% over three days, so treating the trend as down; ~11 working days remain before Aug 7 recess and the effective 2026 window is narrowing toward a September-or-bust scenario"
+  },
+  {
+    "date": "2026-07-24",
+    "score": 0.35,
+    "floor_time": 0.25,
+    "merged_text": 0.9,
+    "ethics_resolved": 0.25,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.18,
+    "note": "Confirmation and hardening of Thursday's walk-back: Fortune/Punchbowl reporting Friday made clear Thune does not expect a Senate floor vote on the merged bill before the Aug 7 recess, removing the pre-recess deadline that industry backers had treated as the real 2026 hurdle; attention already shifting toward a post-midterm lame-duck window with less floor time and more political noise; Wintermute policy lead Ron Hammond argued the bill still has the bipartisan votes on paper but has gotten swept up in election-year messaging fights rather than substance; dem_votes_frac unchanged at 2/7 (Gallego/Alsobrooks only), ethics text still unresolved per Alsobrooks' 'unserious offer' comments from Wednesday; Ripple's Garlinghouse and Coinbase's Armstrong both pushed back publicly, urging the Senate not to let a search for a perfect bill kill an achievable one; Polymarket odds down to roughly 33%, a fresh leg lower off the post-ethics-draft bounce; calendar runway continues to compress toward Aug 7"
+  },
+  {
+    "date": "2026-07-27",
+    "score": 0.38,
+    "floor_time": 0.4,
+    "merged_text": 0.92,
+    "ethics_resolved": 0.2,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.15,
+    "note": "Procedural pulse picks back up after the weekend: CoinDesk reported a further-revised merged Banking/Agriculture draft with a motion to proceed expected as soon as Monday or Tuesday, and a possible full floor vote the week of Aug 3 (after the Aug 7 recess start, underscoring this is now a 'start it, don't finish it' play); no cloture motion had actually been filed as of Monday morning per CryptoTimes/Punchbowl's Brendan Pedersen, who still expects an initial procedural vote before Aug 7 but says full passage before recess is off the table without a unanimous-consent time agreement, which isn't coming; new wrinkle on ethics -- the Lummis/Moreno White House-backed language is now also being called too weak by a Republican, Sen. Thom Tillis, not just Democrats, widening the gap beyond the existing Gallego/Alsobrooks-only Dem count (2 of 7); Polymarket sits at 38% today, up modestly off Friday's ~33% low but still well below the 43-46% bounce earlier in the week of July 20-21; ~11 calendar days (7-8 working days) remain before the Aug 7 recess"
   }
 ]
