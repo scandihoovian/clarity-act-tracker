@@ -118,5 +118,15 @@
     "dem_votes_frac": 0.29,
     "calendar_runway": 0.15,
     "note": "Procedural pulse picks back up after the weekend: CoinDesk reported a further-revised merged Banking/Agriculture draft with a motion to proceed expected as soon as Monday or Tuesday, and a possible full floor vote the week of Aug 3 (after the Aug 7 recess start, underscoring this is now a 'start it, don't finish it' play); no cloture motion had actually been filed as of Monday morning per CryptoTimes/Punchbowl's Brendan Pedersen, who still expects an initial procedural vote before Aug 7 but says full passage before recess is off the table without a unanimous-consent time agreement, which isn't coming; new wrinkle on ethics -- the Lummis/Moreno White House-backed language is now also being called too weak by a Republican, Sen. Thom Tillis, not just Democrats, widening the gap beyond the existing Gallego/Alsobrooks-only Dem count (2 of 7); Polymarket sits at 38% today, up modestly off Friday's ~33% low but still well below the 43-46% bounce earlier in the week of July 20-21; ~11 calendar days (7-8 working days) remain before the Aug 7 recess"
+  },
+  {
+    "date": "2026-07-29",
+    "score": 0.3,
+    "floor_time": 0.15,
+    "merged_text": 0.92,
+    "ethics_resolved": 0.18,
+    "dem_votes_frac": 0.29,
+    "calendar_runway": 0.1,
+    "note": "Further deterioration: Thune has now explicitly confirmed (not just hedged) that no CLARITY floor vote will happen before the Aug 7 recess, per Punchbowl/CoinDesk reporting -- a firmer negative signal than Thursday's 'probably won't' framing; the Senate spent this week on a Russia sanctions/tariffs bill and the late Sen. Graham's funeral, meaning Clarity hasn't even entered the queue and no cloture motion has been filed; Eleanor Terrett/FXStreet report Thune is still expected to move toward filing cloture on the motion to proceed, but Terrett notes the bill currently appears short of 60 votes regardless; ethics fight has widened further -- Sen. Tillis (R) is now on record calling the Lummis/Moreno ethics language too weak, joining Democratic holdouts rather than just Gallego/Alsobrooks remaining uncommitted (dem_votes_frac still 2/7); SEC signaled it's ready to write its own crypto rules if Congress fails to act, undercutting urgency to compromise; Polymarket 2026-passage odds have slid to roughly 28-37% depending on source/day (down from an 82% February peak), Galaxy Research cut its estimate to 30%; ~9 calendar days (6-7 working days) remain before the Aug 7 recess, with this week's floor time already consumed by other business"
   }
 ]
